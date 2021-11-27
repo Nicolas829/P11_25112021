@@ -1,0 +1,31 @@
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:#FF6060;   
+    
+}
+
+.logo{ 
+ 
+}
+.nav-header {
+    align-self: center;
+    display:flex;
+    justify-content: flex-start;
+    gap:5em;
+    
+}
+.nav-header-link {
+    text-decoration: none;
+    color:#FF6060;   
+    font-size:2em;   
+
+}
+.nav-header-accueil{
+   
+    text-decoration:none;
+    border-bottom:solid 1px;
+    font-size:2em;   
+    color:#FF6060;   
+}
