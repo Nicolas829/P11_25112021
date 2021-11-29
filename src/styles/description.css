@@ -1,0 +1,33 @@
+.box-description{
+    background-color: #F6F6F6;
+    width:48%;
+    border-radius:10px;
+}
+
+.description {
+    background-color: #FF6060;   
+    border-radius:10px;
+    padding:0.1em;     
+    align-items: center;
+    color:white;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.titre-description{
+    margin-left:1.5em;
+}
+
+.chevron {
+    margin-right:1.5em;
+}
+.box-detail-description{
+    display: flex;
+    justify-content: center;   
+}
+
+.detail-description {   
+    line-height:1.6;
+    padding:1.5em;   
+    
+}

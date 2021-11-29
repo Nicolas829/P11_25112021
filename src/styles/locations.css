@@ -1,4 +1,5 @@
 .box-logement {
+    text-decoration: none;
     margin-top:2em;
     margin:3em;
     color:white;
@@ -9,32 +10,26 @@
     background: linear-gradient(180deg, rgba(255,96,96,1),black 200%);
 }
 
-.style-title {
+.style-title {    
     margin-top: 1em;;
-   font-size: 1.5em;
-   height:2.5em;
-   font-style: italic;
-   text-align: center;
+    font-size: 1.5em;
+    height:2.5em;   
+    text-align: center;
 }
 
 .style-cover {
-    box-sizing: border-box;
-  
+    box-sizing: border-box;  
     height:50%;
     display: flex;
-    justify-content: center;
-   
+    justify-content: center;   
     overflow: hidden;
 }
 
-.style-logement-img {
-     
+.style-logement-img {     
     width:100%;   
     align-self: center;
-    opacity:0.3;   
-   
-    transition: opacity, width 1s;
-   
+    opacity:0.3;      
+    transition: opacity, width 1s;   
 }
 .style-logement-img:hover{
     width:150%;   
@@ -47,4 +42,11 @@
     flex-wrap: wrap;
     gap:1em;
     width:80%;
+   
+    list-style-type: none;
+}
+
+.style-liste {
+   
+    margin-left:1.5em;
 }
