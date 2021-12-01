@@ -1,24 +1,43 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../styles/carousel.css"
+import { Carousel } from 'react-bootstrap';
+
 
 
 class LigthBox extends React.Component {
     constructor (props){
         super(props)
         this.pictures=this.props.pictures
+      this.state={count:0};
+       
+       
     }
     render() {
         return (
-            <Carousel>
-                <div>
-                    <img src={this.pictures} />
-                  
-                </div>
+            <Carousel fade className="lightbox" interval={null} >                                       
+                        
+                        {this.pictures.map(item=>{return (
+                            <Carousel.Item className="carousel" >   
+                               
+                                <div  className="d-block w-100">
+                                        <img src={item} alt="First Slide"   />  
+                                                                    
+                                </div>
+                                <Carousel.Caption>
+                                  
+                                </Carousel.Caption>
+                           
+                                </Carousel.Item>
+                                
+                            )})}                
+            
+             </Carousel>
+             
                
-            </Carousel>
+           
         );
-    }
-}
+                        }}      
+
 
 export default LigthBox

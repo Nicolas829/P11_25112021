@@ -5,13 +5,19 @@ import  Note  from "../components/Rating"
 import Tags from "../components/Tags"
 import Description from "../components/description"
 import Equipements from "../components/Equipements"
+import LightBox from "../components/Carousel"
+
+
 
 
 class Hebergement extends React.Component {
    constructor(props){
 
        super(props);
-       this.id=this.props.id    }
+       this.id=this.props.id   
+    
+    
+    }
     render (){
       
         
@@ -21,10 +27,10 @@ class Hebergement extends React.Component {
          {if(this.id===data.id)
       {
         return (<section>
-                    <div className="box-image-hebergement">
-                        
-                        <img src={data.cover} alt={data.title} className="image-hebergement"/>            
-                    </div>
+                                          
+                                    
+                    <LightBox pictures={data.pictures} className="lightbox"/>
+                    
                     <div className="name-location-host">
                         <div className="name-location-hebergement">
                             <h1 className="name-hebergement">

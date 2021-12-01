@@ -1,15 +1,24 @@
 .box-description{
-    background-color: #F6F6F6;
+    
     width:48%;
     border-radius:10px;
 }
-
+.btn-primary{
+    background-color: #FF6060;
+    border:none;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus{
+    background-color: #FF6060;
+    border-color:#FF6060;
+}
 .description {
-    background-color: #FF6060;   
+    background-color: #FF6060;
+    border:none;
     border-radius:10px;
-    padding:0.1em;     
-    align-items: center;
+    padding:0.5em;    
+    align-items: center; 
     color:white;
+    font-size:1em;
     width:100%;
     display: flex;
     justify-content: space-between;
@@ -17,16 +26,29 @@
 .titre-description{
     margin-left:1.5em;
 }
+.description:hover{
+    background-color: #FF6060;
+    border:none;
+}
+.description:active{
+    background-color: #FF6060;
+    border:none;
+}
 
 .chevron {
     margin-right:1.5em;
 }
 .box-detail-description{
     display: flex;
-    justify-content: center;   
+    justify-content: flex-start;
+    list-style-type: none; 
+    background-color: #F6F6F6;
+    padding-top:1.5em;
+    padding-bottom:1.5em;
 }
 
 .detail-description {   
+    
     line-height:1.6;
     padding:1.5em;   
     
