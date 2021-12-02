@@ -1,35 +1,26 @@
-.box-logement {
+.link-box{
+    list-style-type: none;
     text-decoration: none;
-    margin-top:2em;
+    
+}
+
+
+.card {  
+    height:32em;
     margin:3em;
     color:white;
-    border-radius: 10px;
-    width:25%;
-    
+    border:none;
+    border-radius: 15px;   
+    overflow: hidden;    
     background: rgba(255,96,96,1);
     background: linear-gradient(180deg, rgba(255,96,96,1),black 200%);
 }
 
-.style-title {    
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 1.5em;
-    height:2.5em;   
-    text-align: center;
-}
-
-.style-cover {
-    box-sizing: border-box;  
-    height:50%;
-    display: flex;
-    justify-content: center;   
-    overflow: hidden;
-}
 
 .style-logement-img {     
-    width:100%;   
-    align-self: center;
-    opacity:0.3;      
+    height:300px;
+    object-fit: cover;
+    opacity:0.5;
     transition: opacity, width 1s;   
 }
 .style-logement-img:hover{
@@ -37,17 +28,15 @@
     opacity:1;
 }
 .style-description {
-    margin-top:2em;
+    
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: flex-start;    
     gap:1em;
-    width:80%;
-   
-    list-style-type: none;
+    flex-wrap: wrap;
+    height:5em;
 }
 
 .style-liste {
-   
+    
     margin-left:1.5em;
 }

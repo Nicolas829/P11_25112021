@@ -7,6 +7,7 @@ import Locations from "../components/locations"
 
 
 
+
 class Home extends React.Component {
     render (){
    return (
@@ -17,9 +18,9 @@ class Home extends React.Component {
             <h1 className="background-text">Chez vous, partout et ailleurs</h1>
         </div>
 
-        <div className="main-container">
+        <row className="col main-container">
             <Locations />
-        </div>
+        </row>
        
 
 

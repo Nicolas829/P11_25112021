@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/apropos.css"
-import FadeCollapse  from "../Fade"
+import FadeCollapse  from "./Fade"
 
 class Respect extends React.Component {
  

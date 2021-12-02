@@ -25,11 +25,12 @@
     flex-direction: column;
     gap:2em;
     color:#FF6060;
-    font-size:2em;
+    font-size:1.2em;
 }
 
 .box-fiabilite{
-   
+        height:auto;
+        position:relative;
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -39,13 +40,13 @@
     font-size:1.5em;
 }    
 .fiabilite {
+        
         background-color: #FF6060;   
         border-radius:10px;
-        padding:2em;          
+        padding:1em;          
         align-items: center;
         color:white;
-        width:100%;
-        height:2.4em;
+        width:100%;        
         display: flex;
         justify-content: space-between;
     }
@@ -63,8 +64,8 @@
     }
 
 .box-respect{
-       
-        
+        height:auto;
+        position:relative;
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -72,13 +73,14 @@
     }
     
 .respect {
+    
     background-color: #FF6060;   
     border-radius:10px;
-    padding:2em;          
+    padding:1em;          
     align-items: center;
     color:white;
     width:100%;
-    height:2.4em;
+    
     display: flex;
     justify-content: space-between;
     }
@@ -101,7 +103,7 @@
 
  
 .box-securite{
-       
+    height:auto;
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -110,14 +112,14 @@
     
 .securite {
     background-color: #FF6060;   
-    border-radius:10px;
-    padding:2em;          
-    align-items: center;
-    color:white;
-    width:100%;
-    height:2.4em;
-    display: flex;
-    justify-content: space-between;
+        border-radius:10px;
+        padding:1em;          
+        align-items: center;
+        color:white;
+        width:100%;
+        
+        display: flex;
+        justify-content: space-between;
     }
 
 .titre-securite{
@@ -134,7 +136,7 @@
     }
  
 .box-service{
-       
+       height:auto;
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -142,15 +144,14 @@
     }
     
 .service {
-    background-color: #FF6060;   
-    border-radius:10px;
-    padding:2em;          
-    align-items: center;
-    color:white;
-    width:100%;
-    height:2.4em;
-    display: flex;
-    justify-content: space-between;
+        background-color: #FF6060;   
+        border-radius:10px;
+        padding:1em;          
+        align-items: center;
+        color:white;
+        width:100%;        
+        display: flex;
+        justify-content: space-between;
     }
 
 .titre-service{

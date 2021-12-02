@@ -2,27 +2,34 @@
 .lightbox{
     margin-top: 7em;
     margin-bottom: 5em;
-    height:300px;
-   
-   
+    height:415px; 
    
 }
 .carousel-inner{
     border-radius: 15px;
-    height:300px;
-    
- 
+    height:415px; 
     box-sizing: border-box;
 }
-
+.counter{
+    font-size:1em;
+    color:white;
+    position:absolute;   
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 40;
+}
 .d-block {
     
-    height:300px;
+    height:415px;
 }
 
-img{
+.img-carousel{
     width:100%;
-    height:300px;
+    height:415px;
     object-fit: cover;    
     
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/description.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { Button, Fade } from 'react-bootstrap';
+import { Fade } from 'react-bootstrap';
 
 class Description extends React.Component {
    constructor(props){
@@ -24,12 +24,12 @@ class Description extends React.Component {
         
    return (<div className="box-description" >
                 
-   <Button className="description" onClick={this.toggle}   >  
+   <div className="description" onClick={this.toggle}   >  
       
                <h3 className="titre-description">Description</h3>
                <FontAwesomeIcon icon={faChevronDown} className="chevron" />               
       
-   </Button>
+   </div>
    <Fade in={this.state.open}>
        <div className="box-detail-description">  
                <div className="parent-liste">     

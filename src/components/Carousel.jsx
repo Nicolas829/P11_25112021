@@ -15,13 +15,15 @@ class LigthBox extends React.Component {
     }
     render() {
         return (
-            <Carousel fade className="lightbox" interval={null} >                                       
+            <Carousel fade className="lightbox" interval={null} indicators={false} >                                       
                         
-                        {this.pictures.map(item=>{return (
+                        {this.pictures.map(item=>{console.log(item.charAt(item.length-5));return (
                             <Carousel.Item className="carousel" >   
-                               
+                                
                                 <div  className="d-block w-100">
-                                        <img src={item} alt="First Slide"   />  
+                                <p className="counter">{item.charAt(item.length-"5")}/{this.pictures.length}</p>
+                                        <img src={item} alt="First Slide" className="img-carousel"  />  
+                                        
                                                                     
                                 </div>
                                 <Carousel.Caption>
