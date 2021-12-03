@@ -1,35 +1,22 @@
-
-import React from "react"
+import React from 'react'
 import BG from '../assets/img/BGaccueil.png'
-import "../styles/Home.css"
-import Locations from "../components/locations"
-
-
-
-
+import '../styles/Home.css'
+import Locations from '../components/locations'
 
 class Home extends React.Component {
-    render (){
-   return (
-    <main>
-        
+  render() {
+    return (
+      <main>
         <div className="background-titre">
-            <img src={BG} alt="bg" className="background-img"/>   
-            <h1 className="background-text">Chez vous, partout et ailleurs</h1>
+          <img src={BG} alt="bg" className="background-img" />
+          <h1 className="background-text">Chez vous, partout et ailleurs</h1>
         </div>
-
         <row className="col main-container">
-            <Locations />
+          <Locations />
         </row>
-       
-
-
-    </main>
-    
+      </main>
     )
-    }
-   
-    
+  }
 }
 
 export default Home

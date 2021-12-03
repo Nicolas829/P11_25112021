@@ -1,6 +1,8 @@
 .btn-check:focus+.btn-primary, .btn-primary:focus, .btn-primary:hover, .btn-check:active{
     background-color: #FF6060;
     border-color:#FF6060;
+    box-shadow: none;
+   
 }
 
 .background-apropos {
@@ -25,12 +27,11 @@
     flex-direction: column;
     gap:2em;
     color:#FF6060;
-    font-size:1.2em;
+    font-size:2em;
 }
 
 .box-fiabilite{
-        height:auto;
-        position:relative;
+   
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -40,13 +41,13 @@
     font-size:1.5em;
 }    
 .fiabilite {
-        
         background-color: #FF6060;   
         border-radius:10px;
-        padding:1em;          
+        padding:2em;          
         align-items: center;
         color:white;
-        width:100%;        
+        width:100%;
+        height:2.4em;
         display: flex;
         justify-content: space-between;
     }
@@ -54,7 +55,12 @@
 .chevron {
         margin-right:1.5em;
         font-size:1.5em;
+        
     }
+.chevron::after{
+    rotate:180deg;
+    transform:rotate(180deg);
+}
 .box-text-fiabilite{
         background-color: #F6F6F6;
         display: flex;
@@ -64,8 +70,8 @@
     }
 
 .box-respect{
-        height:auto;
-        position:relative;
+       
+        
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -73,14 +79,13 @@
     }
     
 .respect {
-    
     background-color: #FF6060;   
     border-radius:10px;
-    padding:1em;          
+    padding:2em;          
     align-items: center;
     color:white;
     width:100%;
-    
+    height:2.4em;
     display: flex;
     justify-content: space-between;
     }
@@ -103,7 +108,7 @@
 
  
 .box-securite{
-    height:auto;
+       
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -112,14 +117,14 @@
     
 .securite {
     background-color: #FF6060;   
-        border-radius:10px;
-        padding:1em;          
-        align-items: center;
-        color:white;
-        width:100%;
-        
-        display: flex;
-        justify-content: space-between;
+    border-radius:10px;
+    padding:2em;          
+    align-items: center;
+    color:white;
+    width:100%;
+    height:2.4em;
+    display: flex;
+    justify-content: space-between;
     }
 
 .titre-securite{
@@ -136,7 +141,7 @@
     }
  
 .box-service{
-       height:auto;
+       
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -144,14 +149,15 @@
     }
     
 .service {
-        background-color: #FF6060;   
-        border-radius:10px;
-        padding:1em;          
-        align-items: center;
-        color:white;
-        width:100%;        
-        display: flex;
-        justify-content: space-between;
+    background-color: #FF6060;   
+    border-radius:10px;
+    padding:2em;          
+    align-items: center;
+    color:white;
+    width:100%;
+    height:2.4em;
+    display: flex;
+    justify-content: space-between;
     }
 
 .titre-service{

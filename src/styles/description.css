@@ -22,6 +22,8 @@
     width:100%;
     display: flex;
     justify-content: space-between;
+    position:relative;
+    z-index:2;
 }
 .titre-description{
     margin-left:1.5em;
@@ -42,13 +44,17 @@
     display: flex;
     justify-content: flex-start;
     list-style-type: none; 
+    position:relative;
+    z-index:1;
+    margin-top: -0.5em;
     background-color: #F6F6F6;
-    padding-top:1.5em;
-    padding-bottom:1.5em;
+    padding:1.5em;
+    border-radius: 15px;
+    height:420px;
 }
 
 .detail-description {   
-    
+    width:60%;
     line-height:1.6;
     padding:1.5em;   
     

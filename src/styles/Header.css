@@ -3,9 +3,10 @@
     flex-direction: row;
     justify-content: space-between;
     color:#FF6060;   
+    padding-right:6em;
+    padding-left:6em;
     
 }
-
 
 .nav-header {
     align-self: center;
@@ -16,14 +17,21 @@
 }
 .nav-header-link {
     text-decoration: none;
+    list-style-type:none;
     color:#FF6060;   
     font-size:2em;   
 
 }
+
+.nav-header-link:hover, .nav-header-accueil:hover{
+    color:#FF6060; 
+}
 .nav-header-accueil{
    
-    text-decoration:none;
-    border-bottom:solid 1px;
+    text-decoration:none; 
     font-size:2em;   
     color:#FF6060;   
+}
+.nav-header-link:focus, .nav-header-accueil:focus{
+    border-bottom:solid 1px;
 }
