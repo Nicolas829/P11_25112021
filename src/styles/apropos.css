@@ -1,9 +1,4 @@
-.btn-check:focus+.btn-primary, .btn-primary:focus, .btn-primary:hover, .btn-check:active{
-    background-color: #FF6060;
-    border-color:#FF6060;
-    box-shadow: none;
-   
-}
+
 
 .background-apropos {
     box-sizing: border-box;
@@ -27,11 +22,11 @@
     flex-direction: column;
     gap:2em;
     color:#FF6060;
-    font-size:2em;
+    font-size:1em;
 }
 
 .box-fiabilite{
-   
+        
         width:80%;        
         border-radius:10px;
         display: flex;       
@@ -63,14 +58,14 @@
 }
 .box-text-fiabilite{
         background-color: #F6F6F6;
-        display: flex;
+        display: none;
         justify-content: center;  
         line-height:1.6;
         padding:1.5em;    
+               
     }
 
-.box-respect{
-       
+.box-respect{       
         
         width:80%;        
         border-radius:10px;
@@ -98,14 +93,16 @@
         margin-right:1.5em;
     }
 .box-text-respect{
-    background-color: #F6F6F6;
-        display: flex;
+        background-color: #F6F6F6;        
         justify-content: center;  
         line-height:1.6;
         padding:1.5em;    
+        display: none;
     }
 
-
+button{
+    border:none;
+}
  
 .box-securite{
        
@@ -134,7 +131,7 @@
 
 .box-text-securite{
         background-color: #F6F6F6;
-        display: flex;
+        display: none;
         justify-content: center;  
         line-height:1.6;
         padding:1.5em;    
@@ -167,7 +164,7 @@
 
 .box-text-service{
        background-color: #F6F6F6;
-        display: flex;
+       display: none;
         justify-content: center;  
         line-height:1.6;
         padding:1.5em;    

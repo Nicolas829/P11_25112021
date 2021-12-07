@@ -16,9 +16,14 @@ class Description extends React.Component {
   }
   toggle() {
     this.setState((state) => {
-      return {
-        open: !state.open,
+      this.setState({
+        open: !this.state.open,
         icon: { faChevronUp },
+      })
+      if (this.state.open === false) {
+        this.display = 'block'
+      } else {
+        this.display = 'none'
       }
     })
   }
@@ -29,11 +34,14 @@ class Description extends React.Component {
           <h3 className="titre-description">Description</h3>
           <FontAwesomeIcon icon={faChevronDown} className="chevron" />
         </div>
-        <Fade in={this.state.open}>
-          <div className="box-detail-description">
+        <div>
+          <div
+            className="box-detail-description"
+            style={{ display: `${this.display}` }}
+          >
             <div className="parent-liste">{this.description}</div>
           </div>
-        </Fade>
+        </div>
       </div>
     )
   }

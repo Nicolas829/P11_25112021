@@ -16,12 +16,19 @@ class Equipements extends React.Component {
     this.toggle = this.toggle.bind(this)
   }
   toggle() {
-    this.setState((state) => {
-      return {
-        open: !state.open,
-        icon: { faChevronUp },
-      }
+    this.setState(() => {
+      let newRotation = this.state.rotation + 180
+
+      this.setState({
+        rotation: newRotation,
+        open: !this.state.open,
+      })
     })
+    if (this.state.open === false) {
+      this.display = 'block'
+    } else {
+      this.display = 'none'
+    }
   }
 
   render() {
@@ -32,15 +39,18 @@ class Equipements extends React.Component {
           <h3 className="titre-equipement">Equipements</h3>
           <FontAwesomeIcon icon={faChevronDown} className="chevron" />
         </div>
-        <Fade in={this.state.open}>
-          <div className="box-detail-equipement">
+        <div>
+          <div
+            className="box-detail-equipement"
+            style={{ display: `${this.display}` }}
+          >
             <div className="parent-liste">
               {this.equipments.map((item) => {
                 return <li className="liste-equipement">{item}</li>
               })}
             </div>
           </div>
-        </Fade>
+        </div>
       </div>
     )
   }

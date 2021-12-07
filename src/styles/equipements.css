@@ -34,7 +34,7 @@
     margin-right:1.5em;
 }
 .box-detail-equipement{
-    display: flex;
+   display:none;
     justify-content: flex-start;
     list-style-type: none; 
     position:relative;

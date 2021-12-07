@@ -9,7 +9,9 @@ class Home extends React.Component {
       <main>
         <div className="background-titre">
           <img src={BG} alt="bg" className="background-img" />
-          <h1 className="background-text">Chez vous, partout et ailleurs</h1>
+          <h1 className="background-text">
+            Chez vous, <span> partout et ailleurs</span>
+          </h1>
         </div>
         <row className="col main-container">
           <Locations />

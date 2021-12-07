@@ -1,0 +1,82 @@
+@media screen and (max-width: 900px){
+
+    /*partie principale*/
+    main {
+        padding-top: 0.5em;
+        padding-right:1em;
+        padding-left:1em;
+      }
+      body{
+          padding-top:1.5em;
+      }
+      /*partie header*/
+      .header{
+     
+        font-size:0.5em;
+        padding-right:1em;
+        padding-left:1em;
+      }
+      .nav-header{
+          gap:2.5em;
+      }
+      svg{
+          width:80%;
+          height:80%;
+      }
+
+      /*partie titre et image*/
+      .background-titre{
+          margin-top: 1em;          
+          min-height:111px;          
+          background-color: black;
+          border-radius: 10px;
+         
+      }
+      .background-text{
+          padding-left: 1em;
+          flex-wrap: wrap;
+          width:70%;
+          font-size:24px;
+          text-align: left;
+         
+      }
+      span{
+          display: inline-block;
+      }
+      .background-img{
+          border-radius: 10px;                  
+      }
+
+      /*partie card*/
+      .main-container{
+           background: none;
+           display: flex;
+           flex-direction: column;
+           gap:2em;
+      }
+      .card{
+            margin:0;
+            height:25em;
+          
+      }
+
+      /*partie hebergement*/
+      /*image carousel*/
+    .lightbox{
+        margin-top:1em;
+        height:255px;
+        overflow: hidden;
+        border-radius:10px;
+    }
+    
+        /*partie présentation*/
+        .name-location-host {
+            flex-direction: column;
+        }
+        .name-hebergement {
+            font-size:18px;
+        }
+        h2{
+            font-size:14px;
+        }
+}

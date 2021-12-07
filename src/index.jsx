@@ -11,6 +11,7 @@ import Error from './components/Error'
 import { data } from './assets/json/data'
 import Hebergement from './pages/Hebergement'
 import Footer from './footer/Footer.jsx'
+import './styles/responsive.css'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,23 @@
+.titre-error{
+font-size: 288px;
+color:#FF6060;
+}
+
+.texte-error{
+    font-size: 36px;
+    color:#FF6060;
+}
+.accueil-error{
+    font-size: 14px;
+    text-decoration: none;
+    color:#FF6060;
+    text-decoration: underline;
+    margin: 6em;
+    
+}
+.main-error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
+}

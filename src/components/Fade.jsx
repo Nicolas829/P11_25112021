@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/description.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { Button, Fade } from 'react-bootstrap'
 
 class FadeCollapse extends React.Component {
   constructor(props) {
@@ -13,6 +12,7 @@ class FadeCollapse extends React.Component {
 
     this.state = {
       open: false,
+
       rotation: 0,
     }
     this.toggle = this.toggle.bind(this)
@@ -27,29 +27,38 @@ class FadeCollapse extends React.Component {
 
       this.setState({
         rotation: newRotation,
-      })
-      return {
         open: !this.state.open,
-      }
+      })
     })
+    if (this.state.open === false) {
+      this.display = 'block'
+    } else {
+      this.display = 'none'
+    }
   }
+
   render() {
+    console.log(this.display)
+
     const { rotation } = this.state
     return (
       <div className={`box-${this.component}`}>
-        <Button className={this.component} onClick={this.toggle}>
+        <button className={this.component} onClick={this.toggle}>
           <h3 className={`titre-${this.component}`}>{this.titre}</h3>
           <FontAwesomeIcon
             icon={faChevronDown}
             className="chevron"
             style={{ transform: `rotate(${rotation}deg)` }}
           />
-        </Button>
-        <Fade in={this.state.open} unmountOnExit={true}>
-          <div className={`box-text-${this.component}`}>
+        </button>
+        <div>
+          <div
+            className={`box-text-${this.component}`}
+            style={{ display: `${this.display}` }}
+          >
             <div className="parent-liste">{this.description}</div>
           </div>
-        </Fade>
+        </div>
       </div>
     )
   }
