@@ -52,7 +52,14 @@
            background: none;
            display: flex;
            flex-direction: column;
+         
            gap:2em;
+      }
+      .box-logement{
+          margin:0;
+      }
+      .link-box{
+          width:100%;
       }
       .card{
             margin:0;
@@ -64,19 +71,120 @@
       /*image carousel*/
     .lightbox{
         margin-top:1em;
-        height:255px;
-        overflow: hidden;
+        height:255px;       
         border-radius:10px;
+    }
+    .panorama{
+        border-radius:10px;
+    }
+
+    .img-carousel{
+        height:255px;
+    }
+
+    .counter{
+    
+       right: 10%;
+       bottom:5%;
     }
     
         /*partie présentation*/
-        .name-location-host {
+        .main-box{
             flex-direction: column;
+        }
+     
+        .tags{
+            font-size:0.6em;
         }
         .name-hebergement {
             font-size:18px;
         }
         h2{
             font-size:14px;
+           }
+
+        .hostname-photo {
+           
+            align-items: flex-end;
+            gap:3em;
+        }
+        .host-stars {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .photo-host{
+            height:42px;
+            width:42px;
+        }
+        .box-stars{
+            font-size:1em;
+        }
+
+        /*partie description et equiepement*/
+        .description-equipements{
+        flex-direction: column;
+        gap:2em;
+        }
+        .box-description{
+            width:100%;
+        }
+        .box-detail-description{
+            font-size:0.7em;
+            height:auto;
+        }
+        .titre-description{
+            
+            font-size:0.7em;
+        }
+        .titre-equipement{
+            font-size:0.7em;
+        }
+        .chevron{
+            font-size:0.6em;
+        }
+        .box-equipement{
+            width:100%;
+        }
+        .box-detail-equipement {
+            font-size:0.7em;
+            height:auto;
+        }
+
+        /*partie a propos*/
+        .box-fiabilite {
+            width:100%;
+        }
+        .box-respect{
+            width:100%;
+        }
+        .box-securite {
+            width:100%;
+        }
+        .box-service {
+            width:100%;
+        }
+        .container-apropos {
+            font-size:1em;
+        }
+        .background-apropos {
+            margin-top: 1em;
+        }
+
+        /*error 404*/
+        .titre-error {
+            margin-top:1em;
+            font-size:96px;
+        }
+        .texte-error {
+            font-size:18px;
+            width:53%;
+           margin-top:-2em;      
+            text-align: center;
+        }
+
+        .accueil-error {
+            
+            margin-bottom:1.5em;
         }
 }

@@ -1,8 +1,7 @@
 import React from 'react'
 import '../styles/equipements.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { Fade } from 'react-bootstrap'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 class Equipements extends React.Component {
   constructor(props) {
@@ -11,7 +10,7 @@ class Equipements extends React.Component {
     this.equipments = this.props.equipments
     this.state = {
       open: false,
-      icon: { faChevronDown },
+      rotation: 0,
     }
     this.toggle = this.toggle.bind(this)
   }
@@ -32,12 +31,17 @@ class Equipements extends React.Component {
   }
 
   render() {
-    console.log(this.state.icon, this.toggle)
+    const { rotation } = this.state
+
     return (
       <div className="box-equipement">
         <div className="equipement" onClick={this.toggle} bsClass="custom-btn">
           <h3 className="titre-equipement">Equipements</h3>
-          <FontAwesomeIcon icon={faChevronDown} className="chevron" />
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className="chevron"
+            style={{ transform: `rotate(${rotation}deg)` }}
+          />
         </div>
         <div>
           <div

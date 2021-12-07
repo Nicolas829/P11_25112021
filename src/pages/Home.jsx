@@ -13,9 +13,8 @@ class Home extends React.Component {
             Chez vous, <span> partout et ailleurs</span>
           </h1>
         </div>
-        <row className="col main-container">
-          <Locations />
-        </row>
+
+        <Locations />
       </main>
     )
   }

@@ -21,7 +21,7 @@ class Hebergement extends React.Component {
               <section>
                 <LightBox pictures={data.pictures} className="lightbox" />
 
-                <div className="name-location-host">
+                <div className="main-box">
                   <div className="name-location-hebergement">
                     <h1 className="name-hebergement">{data.title}</h1>
                     <h2 className="location-hebergement">{data.location}</h2>

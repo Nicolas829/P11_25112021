@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/description.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 class FadeCollapse extends React.Component {
   constructor(props) {
@@ -12,14 +12,10 @@ class FadeCollapse extends React.Component {
 
     this.state = {
       open: false,
-
       rotation: 0,
     }
     this.toggle = this.toggle.bind(this)
-    this.rotate = this.rotate.bind(this)
   }
-
-  rotate() {}
 
   toggle() {
     this.setState(() => {
@@ -38,8 +34,6 @@ class FadeCollapse extends React.Component {
   }
 
   render() {
-    console.log(this.display)
-
     const { rotation } = this.state
     return (
       <div className={`box-${this.component}`}>
@@ -47,7 +41,7 @@ class FadeCollapse extends React.Component {
           <h3 className={`titre-${this.component}`}>{this.titre}</h3>
           <FontAwesomeIcon
             icon={faChevronDown}
-            className="chevron"
+            className="chevron-fade"
             style={{ transform: `rotate(${rotation}deg)` }}
           />
         </button>

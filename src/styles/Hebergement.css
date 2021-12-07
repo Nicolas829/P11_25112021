@@ -3,27 +3,47 @@
     color:#FF6060;   
 }
 
-.name-location-host{    
+/*box contenu présentation*/
+.main-box{    
     display:flex;
-    justify-content: space-between;   
+    justify-content: space-between;  
+    
 }
 
-.name-location-hebergement {
-    align-items: center;
-}
+
+/*nom appartement*/
 .name-hebergement {
     font-weight: 500;
-    font-size: 3em;
-    margin-bottom:0em;
+    font-weight: bold;
+    font-size: 3em;    
+    margin:0;
 }
+/*location*/
 h2 {
     font-size:1.5em;  
     font-weight: 500;
+    margin:0;
 }
+.tags {
+    display:flex;
+    justify-content: flex-start;
+    color:white;
+    
+    gap:1.5em;
+    
+}
+
+/*nom hote*/
 .hostname{
     width:15px;
     line-height: 1.5;
     justify-content:flex-end;
+}
+/*box droite hote photo rating*/
+.host-stars {
+    display: flex;
+    flex-direction: column;   
+    gap:1.5em;
 }
 .hostname-photo{
     display:flex;          
@@ -37,19 +57,8 @@ h2 {
     width:84px;
 }
 
-.tags {
-    display:flex;
-    justify-content: flex-start;
-    color:white;
-    gap:1.5em;
-    
-}
 
-.host-stars {
-    display: flex;
-    flex-direction: column;
-    gap:1.5em;
-}
+
 .box-stars {
     display:flex;
     gap:0.5em;

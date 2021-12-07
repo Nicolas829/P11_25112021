@@ -3,19 +3,11 @@
     width:48%;
     border-radius:10px;
 }
-.btn-primary{
-    background-color: #FF6060;
-    border:none;
-}
-.btn-check:focus+.btn-primary, .btn-primary:focus{
-    background-color: #FF6060;
-    border-color:#FF6060;
-}
+
 .description {
     background-color: #FF6060;
     border:none;
-    border-radius:10px;
-    padding:0.5em;    
+    border-radius:10px;   
     align-items: center; 
     color:white;
     font-size:1em;
@@ -28,14 +20,7 @@
 .titre-description{
     margin-left:1.5em;
 }
-.description:hover{
-    background-color: #FF6060;
-    border:none;
-}
-.description:active{
-    background-color: #FF6060;
-    border:none;
-}
+
 
 .chevron {
     margin-right:1.5em;

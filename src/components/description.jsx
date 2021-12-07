@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/description.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { Fade } from 'react-bootstrap'
 
 class Description extends React.Component {
   constructor(props) {
@@ -10,15 +9,17 @@ class Description extends React.Component {
     this.description = this.props.description
     this.state = {
       open: false,
-      icon: { faChevronDown },
+      rotation: 0,
     }
     this.toggle = this.toggle.bind(this)
   }
+
   toggle() {
     this.setState((state) => {
+      let newRotation = this.state.rotation + 180
       this.setState({
         open: !this.state.open,
-        icon: { faChevronUp },
+        rotation: newRotation,
       })
       if (this.state.open === false) {
         this.display = 'block'
@@ -28,11 +29,16 @@ class Description extends React.Component {
     })
   }
   render() {
+    const { rotation } = this.state
     return (
       <div className="box-description">
         <div className="description" onClick={this.toggle}>
           <h3 className="titre-description">Description</h3>
-          <FontAwesomeIcon icon={faChevronDown} className="chevron" />
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className="chevron"
+            style={{ transform: `rotate(${rotation}deg)` }}
+          />
         </div>
         <div>
           <div
