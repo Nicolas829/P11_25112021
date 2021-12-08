@@ -13,7 +13,7 @@
       .header{
      
         font-size:0.5em;
-        padding-right:1em;
+       padding-right:1em;
         padding-left:1em;
       }
       .nav-header{
@@ -46,7 +46,7 @@
           display: inline-block;
       }
       .background-img{
-         
+         height:150px;
           border-radius: 10px;                  
       }
 
@@ -82,6 +82,8 @@
     }
 
     .img-carousel{
+        width:auto;
+        min-width: 20%;
         height:255px;
     }
 
