@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/description.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 class Description extends React.Component {
   constructor(props) {
@@ -15,18 +15,18 @@ class Description extends React.Component {
   }
 
   toggle() {
-    this.setState((state) => {
-      let newRotation = this.state.rotation + 180
-      this.setState({
-        open: !this.state.open,
-        rotation: newRotation,
-      })
-      if (this.state.open === false) {
-        this.display = 'block'
-      } else {
-        this.display = 'none'
-      }
+    let newRotation = this.state.rotation + 180
+
+    this.setState({
+      rotation: newRotation,
+      open: !this.state.open,
     })
+
+    if (this.state.open === false) {
+      this.display = 'block'
+    } else {
+      this.display = 'none'
+    }
   }
   render() {
     const { rotation } = this.state

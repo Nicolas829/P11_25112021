@@ -15,14 +15,13 @@ class Equipements extends React.Component {
     this.toggle = this.toggle.bind(this)
   }
   toggle() {
-    this.setState(() => {
-      let newRotation = this.state.rotation + 180
+    let newRotation = this.state.rotation + 180
 
-      this.setState({
-        rotation: newRotation,
-        open: !this.state.open,
-      })
+    this.setState({
+      rotation: newRotation,
+      open: !this.state.open,
     })
+
     if (this.state.open === false) {
       this.display = 'block'
     } else {
@@ -35,7 +34,7 @@ class Equipements extends React.Component {
 
     return (
       <div className="box-equipement">
-        <div className="equipement" onClick={this.toggle} bsClass="custom-btn">
+        <div className="equipement" onClick={this.toggle}>
           <h3 className="titre-equipement">Equipements</h3>
           <FontAwesomeIcon
             icon={faChevronDown}
@@ -50,7 +49,11 @@ class Equipements extends React.Component {
           >
             <div className="parent-liste">
               {this.equipments.map((item) => {
-                return <li className="liste-equipement">{item}</li>
+                return (
+                  <li className="liste-equipement" key={item}>
+                    {item}
+                  </li>
+                )
               })}
             </div>
           </div>

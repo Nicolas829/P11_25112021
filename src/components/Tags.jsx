@@ -9,7 +9,11 @@ class Tags extends React.Component {
     return (
       <div className="tags">
         {this.tags.map((item) => {
-          return <p className="tag">{item}</p>
+          return (
+            <p className="tag" key={`tag${item}`}>
+              {item}
+            </p>
+          )
         })}
       </div>
     )

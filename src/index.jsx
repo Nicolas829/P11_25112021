@@ -19,10 +19,15 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         {data.map((item) => {
-          return <Route path={item.id} element={<Hebergement id={item.id} />} />
+          return (
+            <Route
+              path={item.id}
+              element={<Hebergement id={item.id} key={item.id} />}
+            />
+          )
         })}
-        <Route path="apropos" element={<Apropos />} />
-        <Route path="*" element={<Error />} />
+        <Route path="apropos" element={<Apropos />} key="route-apropos" />
+        <Route path="*" element={<Error />} key="route-error" />
       </Routes>
       <Footer />
     </Router>

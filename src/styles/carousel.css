@@ -36,14 +36,12 @@
 .counter{
     font-size:1em;
     color:white;
-    position:absolute;   
-    
+    position:absolute;       
     width:88.7%;
     height:50%;
     display: flex;
     align-items: flex-end;
-    top:40%;
-    
+    top:40%;    
     justify-content: center;
     z-index: 40;
 }

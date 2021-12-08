@@ -11,87 +11,77 @@ class LigthBox extends React.Component {
     super(props)
 
     this.pictures = this.props.pictures
-    this.array = []
+    this.id = this.props.id
     this.state = {
       translate: -0,
-      width: 0,
-      imageWidth: 0,
+      width: this.pictures.length * 100,
+      imageWidth: window.innerWidth,
     }
 
-    this.counter = this.counter.bind(this)
     this.translateRight = this.translateRight.bind(this)
     this.translateLeft = this.translateLeft.bind(this)
   }
-  counter() {
-    this.pictures.forEach(() => {
-      let imageSize = window.innerWidth
-      this.state.imageWidth = imageSize
-      this.state.width = this.pictures.length * 100
-    })
-  }
 
   translateRight() {
-    this.setState(() => {
-      let newTranslate = this.state.translate - 100
-      console.log(newTranslate)
-      if (newTranslate === -this.pictures.length * 100) {
-        newTranslate = 0
-      }
-      this.setState({
-        translate: newTranslate,
-      })
+    let newTranslate = this.state.translate - 100
+
+    if (newTranslate === -this.pictures.length * 100) {
+      newTranslate = 0
+    }
+    this.setState({
+      translate: newTranslate,
     })
   }
 
   translateLeft() {
-    this.setState(() => {
-      let newTranslate = this.state.translate + 100
-      console.log(newTranslate)
-      if (newTranslate === 100) {
-        newTranslate = -(this.pictures.length - 1) * 100
-      }
+    let newTranslate = this.state.translate + 100
 
-      this.setState({
-        translate: newTranslate,
-      })
+    if (newTranslate === 100) {
+      newTranslate = -(this.pictures.length - 1) * 100
+    }
+
+    this.setState({
+      translate: newTranslate,
     })
   }
 
   render() {
-    {
-      this.counter()
-    }
     return (
-      <div className="lightbox">
+      <div className="lightbox" key={`lightbox${this.id}`}>
         <FontAwesomeIcon
           icon={faChevronRight}
           className="chevron-right"
           onClick={this.translateRight}
+          key={`chevronRight${this.id}`}
         />
         <FontAwesomeIcon
           icon={faChevronLeft}
           className="chevron-left"
           onClick={this.translateLeft}
+          key={`chevronLeft${this.id}`}
         />
-        <div className="panorama">
+        <div className="panorama" key={`panorama${this.id}`}>
           {this.pictures.map((item, index) => {
             return (
               <div
                 className="carousel"
                 style={{ transform: `translate(${this.state.translate}%)` }}
+                key={`carousel${item}`}
               >
                 <div
                   className="image"
                   id={index + 1}
                   style={{ width: `${this.state.imageWidth}px` }}
+                  key={`image${this.id}`}
                 >
-                  <p className="counter">
+                  <p className="counter" key={index}>
                     {index + 1}/{this.pictures.length}
                   </p>
                   <img
                     src={item}
-                    alt="image carousel"
+                    alt={`carousel${item}`}
                     className="img-carousel"
+                    key={item}
                   />
                 </div>
               </div>

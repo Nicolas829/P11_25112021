@@ -18,21 +18,19 @@ class FadeCollapse extends React.Component {
   }
 
   toggle() {
-    this.setState(() => {
-      let newRotation = this.state.rotation + 180
+    let newRotation = this.state.rotation + 180
 
-      this.setState({
-        rotation: newRotation,
-        open: !this.state.open,
-      })
+    this.setState({
+      rotation: newRotation,
+      open: !this.state.open,
     })
+
     if (this.state.open === false) {
       this.display = 'block'
     } else {
       this.display = 'none'
     }
   }
-
   render() {
     const { rotation } = this.state
     return (
