@@ -6,20 +6,23 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 
+/*on crée le carousel*/
 class LigthBox extends React.Component {
   constructor(props) {
     super(props)
 
-    this.pictures = this.props.pictures
-    this.id = this.props.id
+    this.pictures = this.props.pictures /*image*/
+    this.id = this.props.id /*id herbegement*/
     this.state = {
-      translate: -0,
-      width: this.pictures.length * 100,
-      imageWidth: window.innerWidth,
+      translate: -0 /* State de transition vertical*/,
+      width: this.pictures.length * 100 /*state de largeur du panorama*/,
+      imageWidth: window.innerWidth /* state largeur image */,
     }
 
-    this.translateRight = this.translateRight.bind(this)
-    this.translateLeft = this.translateLeft.bind(this)
+    this.translateRight =
+      this.translateRight.bind(this) /*transition droite par 100%*/
+    this.translateLeft =
+      this.translateLeft.bind(this) /*transition gauche par 100%*/
   }
 
   translateRight() {
@@ -44,7 +47,9 @@ class LigthBox extends React.Component {
       translate: newTranslate,
     })
   }
-
+  /*rendu carousel */
+  /*fontawesome pour les chevrons */
+  /*array.map pour les images*/
   render() {
     return (
       <div className="lightbox" key={`lightbox${this.id}`}>

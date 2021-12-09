@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/apropos.css'
 import FadeCollapse from '../Fade'
-
+/*on appel la class dans Fade qui va crée l'objet */
 class Securite extends React.Component {
   render() {
     return (

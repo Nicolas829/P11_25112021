@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/locations.css'
 
+/*création des carte de présenations des locations*/
+/*link pour chemin url->data.id*/
 class Locations extends React.Component {
   render() {
     return (
@@ -10,7 +12,11 @@ class Locations extends React.Component {
         <div className="main-container">
           {data.map((data) => {
             return (
-              <Link to={data.id} className="link-box" key={data.id}>
+              <Link
+                to={`hebergement/${data.id}`}
+                className="link-box"
+                key={data.id}
+              >
                 <div className="box-logement">
                   <img
                     variant="top"

@@ -7,14 +7,16 @@ import Description from '../components/description'
 import Equipements from '../components/Equipements'
 import LightBox from '../components/Carousel'
 
+/*page hebergement */
+/*import carousel tags note description et equipement*/
+/*création de la page en fonction de l'id */
 class Hebergement extends React.Component {
   constructor(props) {
     super(props)
-    this.id = this.props.id
-    this.page = this.id
+    this.id = window.location.pathname /*import id from url*/
   }
   render() {
-    const result = data.filter((item) => item.id === this.id)
+    const result = data.filter((item) => `/hebergement/${item.id}` === this.id)
     return (
       <main className="main-hebergement">
         {result.map((data) => {

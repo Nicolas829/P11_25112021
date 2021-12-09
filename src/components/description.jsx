@@ -6,10 +6,11 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 class Description extends React.Component {
   constructor(props) {
     super(props)
-    this.description = this.props.description
+    this.description =
+      this.props.description /*props importer de la page principal*/
     this.state = {
-      open: false,
-      rotation: 0,
+      open: false /*state ouverture collapse*/,
+      rotation: 0 /*state rotation chevron ouverture/fermeture collapse*/,
     }
     this.toggle = this.toggle.bind(this)
   }

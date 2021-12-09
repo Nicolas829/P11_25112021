@@ -5,7 +5,7 @@ import Respect from '../components/apropos/Respect'
 import Service from '../components/apropos/Service'
 import Securite from '../components/apropos/Securite'
 import '../styles/apropos.css'
-
+/*page a propos important les composants créer par Fade*/
 class Apropos extends React.Component {
   render() {
     return (

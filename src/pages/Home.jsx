@@ -3,6 +3,8 @@ import BG from '../assets/img/BGaccueil.png'
 import '../styles/Home.css'
 import Locations from '../components/locations'
 
+/*page accueil*/
+/* import composants locations présentant les locations*/
 class Home extends React.Component {
   render() {
     return (

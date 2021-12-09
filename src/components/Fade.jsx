@@ -2,17 +2,17 @@ import React from 'react'
 import '../styles/description.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-
+/*objet créant les collapse de la page a propos*/
 class FadeCollapse extends React.Component {
   constructor(props) {
     super(props)
-    this.description = this.props.description
-    this.component = this.props.component
-    this.titre = this.props.titre
+    this.description = this.props.description /*props de description  */
+    this.component = this.props.component /*props création de la classname */
+    this.titre = this.props.titre /*props titre*/
 
     this.state = {
-      open: false,
-      rotation: 0,
+      open: false /*state ouverture/fermeture collapse*/,
+      rotation: 0 /* rotation du chevron ouverture/fermeture collapse*/,
     }
     this.toggle = this.toggle.bind(this)
   }

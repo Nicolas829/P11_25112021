@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/error.css'
 
+/*page erreur mauvais path*/
 class Error extends React.Component {
   render() {
     return (

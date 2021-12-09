@@ -3,7 +3,7 @@ import React from 'react'
 class Tags extends React.Component {
   constructor(props) {
     super(props)
-    this.tags = this.props.tags
+    this.tags = this.props.tags /*props import tags hebergement*/
   }
   render() {
     return (

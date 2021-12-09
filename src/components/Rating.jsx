@@ -5,14 +5,12 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 class Note extends React.Component {
   constructor(props) {
     super(props)
-    this.rating = this.props.note
-    this.note = 5
-    this.Array = [1, 2, 3, 4, 5]
-    this.state = {
-      index: 0,
-    }
+    this.rating = this.props.note /*props import rating host*/
+    this.note = 5 /* note maximale */
+    this.Array = [1, 2, 3, 4, 5] /* array pour construction des étoiles */
   }
-
+  /*array.map, chaque item inférieur à la note de l'hebergeur est en rouge*/
+  /* les autres sont en gris*/
   render() {
     return (
       <div className="box-stars">

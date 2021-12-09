@@ -7,10 +7,11 @@ class Equipements extends React.Component {
   constructor(props) {
     super(props)
 
-    this.equipments = this.props.equipments
+    this.equipments =
+      this.props.equipments /*props importer de la page principal*/
     this.state = {
-      open: false,
-      rotation: 0,
+      open: false /*state ouverture collapse*/,
+      rotation: 0 /*state rotation chevron ouverture/fermeture collapse*/,
     }
     this.toggle = this.toggle.bind(this)
   }
