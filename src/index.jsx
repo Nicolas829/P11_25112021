@@ -3,12 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles/index.css'
 import Home from './pages/Home'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Location,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Header from './header/Header.jsx'
 import Apropos from './pages/Apropos'

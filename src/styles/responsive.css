@@ -8,6 +8,8 @@
       }
       body{
           padding-top:1.5em;
+          padding-right:1em;
+        
       }
       /*partie header*/
       .header{
@@ -82,8 +84,7 @@
     }
 
     .img-carousel{
-        width:auto;
-        min-width: 20%;
+       
         height:255px;
     }
 
