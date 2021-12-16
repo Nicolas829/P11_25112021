@@ -13,16 +13,16 @@ import LightBox from '../components/Carousel'
 class Hebergement extends React.Component {
   constructor(props) {
     super(props)
-    this.id = window.location.pathname /*import id from url*/
+    this.id = window.location.pathname //import id from url
   }
   render() {
-    const result = data.filter((item) => `/hebergement/${item.id}` === this.id)
+    const result = data.filter((item) => `/hebergement/${item.id}` === this.id) //compare id des host et celui de l'url
     return (
       <main className="main-hebergement">
         {result.map((data) => {
           return (
             <section key="section-principal">
-              <LightBox
+              <LightBox //appel du composant lightbox---> Carousel
                 pictures={data.pictures}
                 className="lightbox"
                 id={data.id}

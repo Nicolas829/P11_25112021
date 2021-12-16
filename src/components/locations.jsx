@@ -12,7 +12,7 @@ class Locations extends React.Component {
         <div className="main-container">
           {data.map((data) => {
             return (
-              <Link
+              <Link //création de l'url avec to, la Route ecoute l'url et renvoie le composant hebergement
                 to={`hebergement/${data.id}`}
                 className="link-box"
                 key={data.id}
