@@ -10,11 +10,10 @@ import {
 class LigthBox extends React.Component {
   constructor(props) {
     super(props)
-
     this.pictures = this.props.pictures /*image*/
     this.id = this.props.id /*id herbegement*/
     this.state = {
-      translate: -0 /* State de transition vertical*/,
+      translate: -0 /* State de transition horizontal*/,
       width: this.pictures.length * 100 /*state de largeur du panorama*/,
       imageWidth: window.innerWidth /* state largeur image */,
     }
